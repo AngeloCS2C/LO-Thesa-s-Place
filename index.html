@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo Thesa's Place</title>
+    <link rel="stylesheet" href="stash.css">
+    <link href="https://fonts.google.com/specimen/Caveat" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="logo">LO Thesa's Place</h1>
+        <nav>
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#contact-us">Contact us</a></li>
+                <li><a href="#about-us">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Home Section -->
+        <section id = "home-section" class="home-section">
+            <div class="home-left">
+                <h2 class="home-title">Experience Tranquility <br> @ LoThesa’s Place</h2>
+                <p class="home-description">Nestled in the serene landscapes of Naval, Biliran, LoThesa’s Place offers a peaceful escape where nature’s beauty meets modern comfort. Whether you're seeking relaxation, a picturesque setting for your event, or simply a retreat to unwind, LoThesa’s Place invites you to experience the perfect blend of tranquility and hospitality.</p>
+                <button class="upload-button"  onclick="openModal()">Book us now</button>
+            </div>
+
+                <!-- Booking Modal -->
+<div id="booking-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Book Your Reservation</h2>
+        <form id="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contact">Contact:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="purpose">Purpose:</label>
+            <input type="text" id="purpose" name="purpose" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <select id="time" name="time" required>
+                <option value="day">Day</option>
+                <option value="night">Night</option>
+            </select>
+
+            <label for="persons">Number of Persons:</label>
+            <input type="number" id="persons" name="persons" min="1" required>
+
+            <div class="total-container">
+                <p id="total-display">Total: ₱0</p>
+            </div>
+
+            <button type="button" onclick="calculateTotal()">Calculate Total</button>
+            <button type="submit">Submit Booking</button>
+        </form>
+    </div>
+</div>
+
+
+            <div class="profile-pictures">
+                <div class="profile-circle1"></div>
+               
+            </div>
+        </section>
+
+        <!-- Features and Motivation Section -->
+        <section class="features-section">
+ 
+                <div class="slider-container">
+                    <div class="slider-item" style="background-image: url('assets/eventss.png');"></div>
+                    <div class="slider-item" style="background-image: url('assets/nature walks.png');"></div>
+                    <div class="slider-item" style="background-image: url('assets/instagrammble post.png');"></div>
+                    <div class="slider-item" style="background-image: url('assets/sunset.png');"></div>
+                </div>
+         
+            <div class="motivation-box">
+                <p id="motivation-content"></p>
+                <p class="moti-bot"></p>
+            </div>
+        </section>
+
+        <!-- Stuff Section -->
+        <section class="stuff-section">
+            <h2 class="section-title">Food Selection That Delights Everyone</h2>
+            <div class="stuff-row">
+                <!-- 15 Food Items -->
+                
+                <div class="stuff-item" style="background-image: url('foods/food (1).png');"></div>
+                <div class="stuff-item" style="background-image: url('foods/food (2).png');"></div>
+                <div class="stuff-item" style="background-image: url('foods/food (3).png');"></div>
+                <div class="stuff-item" style="background-image: url('foods/food (4).png');"></div>
+                <div class="stuff-item" style="background-image: url('foods/food (5).png');"></div>
+                <div class="stuff-item" style="background-image: url('foods/food (6).png');"></div>
+                <div class="stuff-item" style="background-image: url('foods/food (7).png');"></div>
+                <div class="stuff-item" style="background-image: url('foods/food (8).png');"></div>
+                <div class="stuff-item" style="background-image: url('foods/food (9).png');"></div>
+                <div class="stuff-item" style="background-image: url('foods/food (10).png');"></div>
+                <div class="stuff-item" style="background-image: url('foods/food (11).png');"></div>
+                <div class="stuff-item" style="background-image: url('foods/food (12).png');"></div>
+                <div class="stuff-item" style="background-image: url('foods/food (13).png');"></div>
+                <div class="stuff-item" style="background-image: url('foods/food (14).png');"></div>
+            
+            <!-- Duplicate Row for Seamless Loop -->
+    
+        <div class="stuff-item" style="background-image: url('foods/food (1).png');"></div>
+        <div class="stuff-item" style="background-image: url('foods/food (2).png');"></div>
+        <div class="stuff-item" style="background-image: url('foods/food (3).png');"></div>
+        <div class="stuff-item" style="background-image: url('foods/food (4).png');"></div>
+        <div class="stuff-item" style="background-image: url('foods/food (5).png');"></div>
+        <div class="stuff-item" style="background-image: url('foods/food (6).png');"></div>
+        <div class="stuff-item" style="background-image: url('foods/food (7).png');"></div>
+        <div class="stuff-item" style="background-image: url('foods/food (8).png');"></div>
+        <div class="stuff-item" style="background-image: url('foods/food (9).png');"></div>
+        <div class="stuff-item" style="background-image: url('foods/food (10).png');"></div>
+        <div class="stuff-item" style="background-image: url('foods/food (11).png');"></div>
+        <div class="stuff-item" style="background-image: url('foods/food (12).png');"></div>
+        <div class="stuff-item" style="background-image: url('foods/food (13).png');"></div>
+        <div class="stuff-item" style="background-image: url('foods/food (14).png');"></div>
+    </div>
+            
+        </section ">
+        
+        <section id="contact-us" class="contact-us">
+            <!-- Row 1: Green Leaf Background -->
+            <div class="row row-1"></div>
+            
+            <!-- Row 2: Wooden Background -->
+            <div class="row row-2">
+                <div class="contact-content">
+                    <div class="contact-item contact-header">Contact us</div>
+                    <div class="contact-row">
+                        <div class="contact-item">0917-629-3616</div>
+                        <div class="contact-item">
+                            <a href="https://www.facebook.com/lothesa" target="_blank" class="contact-link">FB: @lothesa</a>
+                        </div>
+                    </div>
+                    <div class="contact-item contact-header">Business Hours</div>
+                    <div class="contact-row">
+                        <div class="contact-item">Monday to Saturday: 7:00 am - 6:00 pm</div>
+                        <div class="contact-item">Sunday: 7:00 am - 6:00 pm</div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Row 3: Green Leaf Background -->
+            <div class="row row-3"></div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us" class="about-section">
+            <h2>LO Thesa's Place</h2>
+            <p>Located in Sitio Puros Tugas, Brgy. Calumpang, Naval, Biliran</p>
+            <p>LoThesa's Place is where nature and comfort blend seamlessly. Celebrate, relax, and create unforgettable memories in our serene venue.
+
+                Nestled in Naval, Biliran, we offer a tranquil escape perfect for any occasion—be it weddings, retreats, or simple getaways.
+                
+                At LoThesa's Place, we provide a picturesque setting and personalized services to make your special moments truly unique.
+                
+                Experience the beauty of nature and warm hospitality. LoThesa's Place is your haven for relaxation and celebration.
+                
+                Discover a venue that combines natural charm with exceptional amenities. Welcome to LoThesa's Place.</p>
+            <button class="footer-button">Buy us a coffee Gcash: 09450348247</button>
+            <button class="footer-button">Have a concern or feedback? Email us at lothesaofficial@gmail.com. We’d love to hear from you!</button>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-team">
+                <p>Lo Thesa's Place</p>
+                <p>Copyright @2024</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="stash.js"></script>
+</body>
+</html>
